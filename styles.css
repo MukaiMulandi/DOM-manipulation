@@ -1,0 +1,74 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #1d4ed8;
+    --light: #f8fafc;
+    --dark: #1e293b;
+    --border-radius: 8px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.demo-box {
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #e2e8f0;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+}
+
+.list-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e2e8f0;
+    border-radius: calc(var(--border-radius) - 2px);
+}
+
+#changeable-text {
+    min-height: 1.5em;
+    margin: 15px 0;
+}
